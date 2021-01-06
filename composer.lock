@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e5de2eb96a573a4e8ddfff3e220b1ebf",
+    "packages": [
+        {
+            "name": "ladamalina/lingua-stem-ru",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ladamalina/php-lingua-stem-ru.git",
+                "reference": "c530218ee019b6e08008c537b3958fe745775f1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ladamalina/php-lingua-stem-ru/zipball/c530218ee019b6e08008c537b3958fe745775f1a",
+                "reference": "c530218ee019b6e08008c537b3958fe745775f1a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeception/base": "^2.2.3",
+                "codeception/specify": "~0.4.3",
+                "codeception/verify": "~0.3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nadezhda Ryabtsova",
+                    "email": "nadezhdaryabtsova@gmail.com"
+                }
+            ],
+            "description": "Стеммер Портера. Извлечение корня из русского слова, без словаря.",
+            "time": "2017-09-24T06:29:50+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
