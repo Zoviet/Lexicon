@@ -89,7 +89,7 @@ class Semantic {
 		/*
 		Предлоги
 		*/	
-		'PRES' => array ('в','на','по','из','и')
+		'PRES' => array ('в','на','по','из','и','до')
     ];
     
     /*
@@ -184,6 +184,8 @@ class Semantic {
 		if (!is_string($string)) {
 			throw new \Exception(self::ERRORS['S01']);
 		} else {
+			$this->words = array();
+			$this->result = array();
 			$this->string = trim($string);
 		}
 		return $this;
@@ -202,8 +204,8 @@ class Semantic {
 	 * Преобразование в массив слов
 	*/
 	
-	public function words() {
-		$this->words = str_word_count($this->string,1,self::ALPHABET);	
+	public function words($array=NULL) {
+		$this->words = (empty($array)) ? str_word_count($this->string,1,self::ALPHABET) : $array;	
 		return $this;
 	}
 	
@@ -343,8 +345,8 @@ class Semantic {
 	
 	protected function remove_words_endings() {
 		if(empty($this->words)) $this->words();
-		foreach ($this->words as $word) {
-			$this->words[] = self::remove_ending($word);	
+		foreach ($this->words as $key=>$word) {
+			$this->words[$key] = self::remove_ending($word);	
 		}
 		return $this;
 	}

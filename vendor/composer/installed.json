@@ -1,0 +1,45 @@
+[
+    {
+        "name": "ladamalina/lingua-stem-ru",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "git@github.com:ladamalina/php-lingua-stem-ru.git",
+            "reference": "c530218ee019b6e08008c537b3958fe745775f1a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ladamalina/php-lingua-stem-ru/zipball/c530218ee019b6e08008c537b3958fe745775f1a",
+            "reference": "c530218ee019b6e08008c537b3958fe745775f1a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "codeception/base": "^2.2.3",
+            "codeception/specify": "~0.4.3",
+            "codeception/verify": "~0.3.1"
+        },
+        "time": "2017-09-24T06:29:50+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Stem\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nadezhda Ryabtsova",
+                "email": "nadezhdaryabtsova@gmail.com"
+            }
+        ],
+        "description": "Стеммер Портера. Извлечение корня из русского слова, без словаря."
+    }
+]
