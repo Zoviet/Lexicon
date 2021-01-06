@@ -2,7 +2,7 @@
     "name": "zoviet/lexicon",
     "description": "Класс грамматических и смысловых преобразований русских слов и предложений",
     "type": "library",
-    "license": "GNU",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Zoviet",
